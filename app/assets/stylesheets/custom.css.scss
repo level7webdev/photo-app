@@ -12,3 +12,14 @@
   filter: var(--shadow-spec);
   -webkit-filter: var(--shadow-spec);
 }
+
+.jumbotron {
+  background-image: asset-url("camera-jumbo.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 !important;
+}
+
+.alert {
+  margin-bottom: 0 !important;
+}

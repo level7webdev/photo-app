@@ -1,2 +1,50 @@
-<h1>Photo App</h1>
-<p>Welcome to the photo app</p>
+<% if current_user %>
+
+<div class="jumbotron text-light">
+  <h1 class="display-4">Photo App</h1>
+  <p class="lead">Welcome <%= current_user.full_name %></p>
+  <hr class="my-4">
+  <p>Upload all the amazing photos you've taken since your last visit.</p>
+</div>
+
+<% else %>
+
+<div class="jumbotron text-light">
+  <h1 class="display-4">Photo App</h1>
+  <p>You'll love managing your photos with out app.</p>
+  <hr class="my-4">
+
+  <div class="row justify-content-around">
+    <div class="col-4">
+      <div class="card bg-dark text-light">
+        <div class="card-body">
+          <h5 class="card-title">Premium Plan</h5>
+            <ul>
+              <li>Unlimited image uploads</li>
+              <li>Responsive design</li>
+              <li>Access Anywhere</li>
+              <li>Unlimited Projects</li>
+            </ul>
+          <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary" %>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card bg-dark bg-light">
+        <div class="card-body">
+          <h5 class="card-title">Amaze Plan</h5>
+            <ul>
+              <li>Unlimited image uploads</li>
+              <li>Responsive design</li>
+              <li>Access Anywhere</li>
+              <li>Unlimited Projects</li>
+            </ul>
+          <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<% end %>  
