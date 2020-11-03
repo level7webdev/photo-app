@@ -1,5 +1,14 @@
 @import "bootstrap/dist/css/bootstrap";
 
 .navbar {
-    background-color: #011c44 !important
+  background-color: #011c44 !important;
+}
+
+.navbar-logo {
+  --shadow-spec: drop-shadow(3px 6px 2px rgba(0,0,0,0.75));
+
+  height: 50px;
+  width: auto;
+  filter: var(--shadow-spec);
+  -webkit-filter: var(--shadow-spec);
 }
