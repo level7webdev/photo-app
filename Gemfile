@@ -24,6 +24,12 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise'
 gem 'devise-bootstrap-views', '~> 1.0'
 
+# Use Fontawesome SASS
+gem 'font-awesome-sass', '~> 5.15.1'
+
+# Use favicon
+gem 'rails_real_favicon'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
