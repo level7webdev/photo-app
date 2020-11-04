@@ -63,6 +63,7 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
 
   config.action_mailer.default_options = { from: "do-not-reply@l7wd-photo-app.com" }
+  Rails.application.routes.default_url_options[:host] = 'l7wd-photo-app.herokuapp.com'
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
