@@ -24,6 +24,9 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise'
 gem 'devise-bootstrap-views', '~> 1.0'
 
+# Stripe for payments
+gem 'stripe'
+
 # Use Fontawesome SASS
 gem 'font-awesome-sass', '~> 5.15.1'
 
